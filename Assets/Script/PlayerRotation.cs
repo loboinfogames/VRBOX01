@@ -22,6 +22,6 @@ public class PlayerRotation : MonoBehaviour
         mouseX += Input.GetAxis("MouseX") * sensibilidade;// Incrementa o valor do eixo X e multiplica pela sensibilidade
         mouseY -= Input.GetAxis("MouseY") * sensibilidade;
 
-        transform.eulerAngles = new Vector3(mouseY, mouseX, 0);//Executa a rotação da câmera de acordo com os eixos
+        transform.eulerAngles = new Vector3(0, mouseX, 0);//Executa a rotação da câmera de acordo com os eixos
     }
 }
